@@ -42,6 +42,6 @@ app.listen(3001, () => {
     console.log(`Server started on port`);
 });
 
-// Pahami konsep sequilize nya juga dan middlewar
+// Pahami konsep sequilize nya juga dan middlewar -midleware paham
 // pakai sequilize dan migrasi databases // udah
-// besok buat crud dan login pakai jwt  //crud udah 
+// besok buat crud dan login pakai jwt  // udah

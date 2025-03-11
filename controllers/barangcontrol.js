@@ -1,12 +1,11 @@
 import Barang from "../models/barang.js";
 
 export const FindAllBarang = async (req,res) =>{
-    try {
-        const barang = await Barang.findAll();
-        res.status(200).json(barang);
-    } catch (error) {
-        res.status(404).json({msg : "Not Found"})
-    }
+    Barang.findAll().then((barang) => {
+        res.status(200).json({barang : barang});
+    }).catch((err)=>{
+        res.status(500).json({error : err});
+    })
 }
 
 export const FindBarangById = async (req,res) => {
